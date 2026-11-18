@@ -19,6 +19,7 @@ class Todo(db.Model):
         db.String(200),
         nullable=False
     )
+    
 with app.app_context():
     db.create_all()
 
