@@ -5,13 +5,13 @@
             <meta name="viewport" content="width=device-width, initial-scale=1.0" />
             <title>Flask MVP</title>
         </head>
-            <nav>
-            <a href="{{ url_for('home') }}">首頁</a>
-            <a href="{{ url_for('html_tags') }}">HTML 展示</a>
-    </nav>
-        <body>
-            <h1>Hello, {{ name }}</h1>
-            <h1>Flask MVP Website</h1>
-            <p>這是一個最小可行版本的 Flask 網站。</p>
-        </body>
+            <body>
+            {% extends "base.html" %}
+
+            {% block content %}    
+                <h1>Hello, {{ name }}</h1>
+                <h1>Flask MVP Website</h1>
+                <p>這是一個最小可行版本的 Flask 網站。</p>
+            {% endblock %}
+            </body>
     </html>

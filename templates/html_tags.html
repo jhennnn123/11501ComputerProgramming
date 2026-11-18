@@ -8,6 +8,9 @@
 </head>
 <body>
   <main>
+    {% extends "base.html" %}
+
+    {% block content %}
     <a href="/">回到首頁</a>
     <section id="text">
       <h2>1. 文字標籤</h2>
@@ -246,5 +249,6 @@
   <footer>
     <p>HTML 標籤總覽頁示範完成</p>
   </footer>
+    {% endblock %}
 </body>
 </html>
